@@ -198,133 +198,15 @@
         /* Hero/Featured */
         .hero {
             margin: 16px;
-            background: linear-gradient(180deg, #F5A882 0%, #EE9E7A 100%);
             border-radius: 16px;
-            padding: 28px 20px;
-            position: relative;
             overflow: hidden;
-            min-height: 300px;
-            display: flex;
-            align-items: center;
         }
 
-        /* Estrellas decorativas */
-        .hero::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background-image:
-                radial-gradient(3px 3px at 8% 15%, rgba(180,210,240,0.9), transparent),
-                radial-gradient(2px 2px at 15% 45%, rgba(255,255,255,0.8), transparent),
-                radial-gradient(2px 2px at 5% 70%, rgba(180,210,240,0.7), transparent),
-                radial-gradient(3px 3px at 25% 25%, rgba(255,255,255,0.6), transparent),
-                radial-gradient(2px 2px at 35% 60%, rgba(180,210,240,0.8), transparent),
-                radial-gradient(2px 2px at 12% 85%, rgba(255,255,255,0.7), transparent),
-                radial-gradient(3px 3px at 45% 10%, rgba(180,210,240,0.6), transparent),
-                radial-gradient(2px 2px at 55% 40%, rgba(255,255,255,0.5), transparent),
-                radial-gradient(2px 2px at 40% 80%, rgba(180,210,240,0.7), transparent),
-                radial-gradient(3px 3px at 65% 20%, rgba(255,255,255,0.6), transparent),
-                radial-gradient(2px 2px at 75% 55%, rgba(180,210,240,0.8), transparent),
-                radial-gradient(2px 2px at 85% 30%, rgba(255,255,255,0.7), transparent),
-                radial-gradient(3px 3px at 92% 65%, rgba(180,210,240,0.9), transparent),
-                radial-gradient(2px 2px at 78% 85%, rgba(255,255,255,0.6), transparent),
-                radial-gradient(4px 4px at 3% 50%, rgba(180,210,240,1), transparent),
-                radial-gradient(4px 4px at 95% 45%, rgba(180,210,240,1), transparent);
-            background-size: 100% 100%;
-            pointer-events: none;
-            z-index: 1;
-        }
-
-        .hero-content {
-            position: relative;
-            z-index: 2;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
+        .hero-banner {
             width: 100%;
-            gap: 10px;
-        }
-
-        .hero-text {
-            flex: 1;
-        }
-
-        .hero-title {
-            font-size: 24px;
-            font-weight: 800;
-            font-style: italic;
-            color: white;
-            -webkit-text-stroke: 2px #4a3a5c;
-            text-shadow: 3px 3px 0 #4a3a5c;
-            line-height: 1.1;
-            margin-bottom: 2px;
-        }
-
-        .hero-hours {
-            font-size: 32px;
-            font-weight: 800;
-            font-style: italic;
-            color: white;
-            -webkit-text-stroke: 2px #4a3a5c;
-            text-shadow: 3px 3px 0 #4a3a5c;
-            margin-bottom: 14px;
-        }
-
-        .hero-subtitle {
-            font-size: 15px;
-            font-weight: 700;
-            color: #5c4a6e;
-            text-shadow: 1px 1px 2px rgba(255,255,255,0.5);
-            line-height: 1.4;
-            margin-bottom: 10px;
-        }
-
-        .hero-delivery {
-            font-size: 14px;
-            font-weight: 800;
-            color: #5c4a6e;
-            text-shadow: 1px 1px 2px rgba(255,255,255,0.5);
-        }
-
-        .hero-mascot {
-            width: 150px;
             height: auto;
-            object-fit: contain;
-            flex-shrink: 0;
-            filter: drop-shadow(3px 4px 6px rgba(0,0,0,0.25));
-        }
-
-        @media (min-width: 400px) {
-            .hero-title {
-                font-size: 28px;
-            }
-            .hero-hours {
-                font-size: 38px;
-            }
-            .hero-subtitle {
-                font-size: 17px;
-            }
-            .hero-delivery {
-                font-size: 16px;
-            }
-            .hero-mascot {
-                width: 180px;
-            }
-        }
-
-        @media (min-width: 480px) {
-            .hero-title {
-                font-size: 32px;
-            }
-            .hero-hours {
-                font-size: 44px;
-            }
-            .hero-mascot {
-                width: 200px;
-            }
+            display: block;
+            border-radius: 16px;
         }
 
         /* Product Grid */
@@ -884,15 +766,7 @@
 
         <!-- Hero Banner -->
         <div class="hero">
-            <div class="hero-content">
-                <div class="hero-text">
-                    <div class="hero-title">Abierto al caer la noche</div>
-                    <div class="hero-hours">6pm a 5am</div>
-                    <div class="hero-subtitle">Late Night Munchies para<br>zona Zibatá y Zakia</div>
-                    <div class="hero-delivery">🏍️ Entrega de 25 a 35 minutos 🏍️</div>
-                </div>
-                <img src="Chancho_GDE.png" alt="Chancho Oscuro" class="hero-mascot">
-            </div>
+            <img src="BannerHorario.png" alt="Chancho Oscuro - Abierto al caer la noche 6pm a 5am" class="hero-banner">
         </div>
 
         <!-- Tabs -->
